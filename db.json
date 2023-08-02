@@ -1,0 +1,25 @@
+{
+    "users": [
+      {
+        "id": 1,
+        "name": "John Doe",
+        "email": "@johndoeexample.com",
+        "password": "password123"
+      }
+    ],
+    "login": [
+        {
+          "id": 1,
+          "name": "John Doe",
+          "password": "password123"
+        }
+    ],
+    "signup": [
+        {
+          "id": 1,
+          "name": "John Doe",
+          "email": "@johndoeexample.com",
+          "password": "password123"
+        }
+    ]
+}
