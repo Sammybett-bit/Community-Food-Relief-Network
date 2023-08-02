@@ -45,13 +45,13 @@ function login(event) {
     var email = document.getElementById('signupEmail').value;
     var password = document.getElementById('signupPassword').value;
   
-//     // Send registration request to the API
-//     var url = 'http://localhost:3000/users'; // Replace with the actual API endpoint for signup
-//     var data = {
-//       name: name,
-//       email: email,
-//       password: password
-//     };
+    // Send registration request to the API
+    var url = 'http://localhost:3000/users'; // Replace with the actual API endpoint for signup
+    var data = {
+      name: name,
+      email: email,
+      password: password
+    };
   
 //     // Make a POST request to the users API endpoint
 //     fetch(url, {
