@@ -6,4 +6,7 @@ function distributeFood() {
     const placeDistributed =prompt('Enter the place the food to be distributed')
 }
 
-fuction addVolunteer() {}
+function addVolunteer() {
+const name = prompt("Enter volunteer's name:");
+const role = prompt("Enter volunteer's role:");
+}
