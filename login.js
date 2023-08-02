@@ -1,41 +1,41 @@
 // JavaScript code for login and registration functionality
 
 function login(event) {
-//     event.preventDefault(); // Prevent form submission
+    event.preventDefault(); // Prevent form submission
   
-//     // Get input values
-//     var name = document.getElementById('Name').value;
-//     var password = document.getElementById('password').value;
+    // Get input values
+    var name = document.getElementById('Name').value;
+    var password = document.getElementById('password').value;
   
-//     // Send login request to the API
-//     var url = 'http://localhost:3000/users'; 
-//     // Make a GET request to the users API endpoint
-//     fetch(url)
-//       .then(function(response) {
-//         if (response.ok) {
-//           return response.json();
-//         } else {
-//           throw new Error('Error: ' + response.status);
-//         }
-//       })
-//       .then(function(users) {
-//         var authenticatedUser = users.find(function(user) {
-//           return user.name === name && user.password === password;
-//         });
+    // Send login request to the API
+    var url = 'http://localhost:3000/users'; 
+    // Make a GET request to the users API endpoint
+    fetch(url)
+      .then(function(response) {
+        if (response.ok) {
+          return response.json();
+        } else {
+          throw new Error('Error: ' + response.status);
+        }
+      })
+      .then(function(users) {
+        var authenticatedUser = users.find(function(user) {
+          return user.name === name && user.password === password;
+        });
   
-//         if (authenticatedUser) {
-//           // Redirect to the next page
-//           window.location.href = 'dashboard.html';
-//           alert('WELCOME TO FOOD RELIEF ...');
-//         } else {
-//           alert('Invalid login credentials. Please try again.');
-//         }
-//       })
-//       .catch(function(error) {
-//         console.error('Error:', error);
-//         alert('An error occurred. Please try again later.');
-//       });
-//   }
+        if (authenticatedUser) {
+          // Redirect to the next page
+          window.location.href = 'dashboard.html';
+          alert('WELCOME TO FOOD RELIEF ...');
+        } else {
+          alert('Invalid login credentials. Please try again.');
+        }
+      })
+      .catch(function(error) {
+        console.error('Error:', error);
+        alert('An error occurred. Please try again later.');
+      });
+  }
   
 //   function signup(event) {
 //     event.preventDefault(); // Prevent form submission
