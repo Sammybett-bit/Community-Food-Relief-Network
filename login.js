@@ -37,8 +37,8 @@ function login(event) {
       });
   }
   
-//   function signup(event) {
-//     event.preventDefault(); // Prevent form submission
+  function signup(event) {
+    event.preventDefault(); // Prevent form submission
   
 //     // Get input values
 //     var name = document.getElementById('signupName').value;
