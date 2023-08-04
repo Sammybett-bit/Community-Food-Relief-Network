@@ -5,9 +5,9 @@ body {background-image: url('images/food-donation.jpg');
     background-attachment: fixed;
 }
 /* Reset default margin and padding */
-body, h1, h2, h3, h4, h5, h6, p, form, input, label, footer {
-  margin: 0;
-  padding: 0;
+html {
+    margin: 0;
+    padding: 0;
 }
 
 /* Set font properties */
@@ -15,6 +15,59 @@ body {
   font-family: Arial, sans-serif;
   font-size: 16px;
   line-height: 1.6;
+}
+/* body{
+  background-color: rgba(75, 126, 171, 0.801);
+  font-family: 'Times New Roman', Times, serif;
+  margin: o;
+  padding: o;
+} */
+
+.container1{
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  background-color: #199cbd;
+}
+.custom-icon img{
+  border: 1px solid black;
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+}
+nav {
+  background-color: #199cbd;
+  padding: 20px;
+  
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 1.5em;
+}
+
+nav ul li {
+  margin-right: 40px;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  padding: 20px;
+  border-radius: 5px;
+  
+}
+
+nav ul li a:hover {
+  background-color: #000080;
+  text-decoration: underline;
+  text-decoration-color: bisque;
 }
 
 /* Set background and text colors */

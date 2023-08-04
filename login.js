@@ -25,7 +25,7 @@ function login(event) {
   
         if (authenticatedUser) {
           // Redirect to the next page
-          window.location.href = 'dashboard.html';
+          window.location.href = 'collectFood.html';
           alert('WELCOME TO FOOD RELIEF ...');
         } else {
           alert('Invalid login credentials. Please try again.');
@@ -53,30 +53,31 @@ function login(event) {
       password: password
     };
   
-//     // Make a POST request to the users API endpoint
-//     fetch(url, {
-//       method: 'POST',
-//       headers: {
-//         'Content-Type': 'application/json'
-//       },
-//       body: JSON.stringify(data)
-//     })
-//       .then(function(response) {
-//         if (response.ok) {
-//           alert('Registration successful. You can now login.');
-//         } else {
-//           throw new Error('Error: ' + response.status);
-//         }
-//       })
-//       .catch(function(error) {
-//         console.error('Error:', error);
-//         alert('An error occurred. Please try again later.');
-//       });
-//   }
+    // Make a POST request to the users API endpoint
+    fetch(url, {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json'
+      },
+      body: JSON.stringify(data)
+    })
+      .then(function(response) {
+        if (response.ok) {
+          alert('Registration successful. You can now login.');
+        } else {
+          throw new Error('Error: ' + response.status);
+        }
+      })
+      .catch(function(error) {
+        console.error('Error:', error);
+        alert('An error occurred. Please try again later.');
+      });
+  }
   
-//   // Add event listeners to the login and signup forms
-//   var loginForm = document.getElementById('loginForm');
-//   loginForm.addEventListener('submit', login);
+  // Add event listeners to the login and signup forms
+  var loginForm = document.getElementById('loginForm');
+  loginForm.addEventListener('submit', login);
   
-//   var signupForm = document.getElementById('signupForm');
-//   signupForm.addEventListener('submit', signup);
+  var signupForm = document.getElementById('signupForm');
+  signupForm.addEventListener('submit', signup);
+
