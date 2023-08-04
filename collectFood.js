@@ -1,3 +1,4 @@
+document.addEventListener("DOMContentLoaded", function () {
  // Function to handle the form submission
  document.getElementById('pickup-form').addEventListener('submit', function (event) {
     event.preventDefault(); // Prevent form submission
@@ -10,4 +11,5 @@
 
     //display an alert with the pickup location
     alert('Pickup Location: ' + pickupLocation);
+});
 });
