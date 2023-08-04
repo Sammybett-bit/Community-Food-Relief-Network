@@ -8,6 +8,6 @@
     // You can perform actions with the pickupLocation value here
     console.log('Pickup Location:', pickupLocation);
 
-    // For example, you can display an alert with the pickup location
+    //display an alert with the pickup location
     alert('Pickup Location: ' + pickupLocation);
 });
