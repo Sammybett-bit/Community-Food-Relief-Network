@@ -26,7 +26,7 @@ To run the website locally, follow these steps:
 
 You need to have vs-code, git installed in your machine ,db.json server installed and postman
 
-git clone https://github.com/Sammybett-bit/Phase-1-Project-Week
+git clone https://github.com/Sammybett-bit/Community-Food-Relief-Network
 git add .
 
 git commit -m "initial commit"
