@@ -3,7 +3,7 @@
     event.preventDefault(); // Prevent form submission
 
     // Get the value of the entered pickup location
-    var pickupLocation = document.getElementById('pickup-location').value;
+    let pickupLocation = document.getElementById('pickup-location').value;
 
     // You can perform actions with the pickupLocation value here
     console.log('Pickup Location:', pickupLocation);
