@@ -25,7 +25,7 @@ function login(event) {
   
         if (authenticatedUser) {
           // Redirect to the next page
-          window.location.href = 'collectFood.html';
+          window.location.href = 'index.html';
           alert('WELCOME TO FOOD RELIEF ...');
         } else {
           alert('Invalid login credentials. Please try again.');
